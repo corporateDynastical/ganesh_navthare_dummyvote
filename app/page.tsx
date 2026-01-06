@@ -28,7 +28,7 @@ setActiveRow(index);
 return (
 <section className="bg-gray-100 dark:bg-gray-900 px-4 md:px-24 py-6 text-black dark:text-white">
 <h1 className="text-center text-xl font-bold mb-4 pt-2">
-छत्रपती संभाजीनगर महानगरपालिका सार्वत्रिक निवडणूक - डमी मतदान यंत्र
+पुणे महानगरपालिका सार्वत्रिक निवडणूक - २०२६ डमी मतदान यंत्र
 </h1>
 
 <div className="text-center mb-4 pt-2">
@@ -39,7 +39,7 @@ return (
 
 <div className="text-center mb-4 pt-2">
 <span className="bg-yellow-200 text-green-800 font-bold px-4 py-2 inline-block rounded dark:bg-yellow-300">
-प्रभाग क्र. १० (अ) चे अधिकृत उमेदवार
+राष्ट्रवादी काँग्रेस पार्टीचे प्रभाग क्र. २४-ड चे अधिकृत उमेदवार
 </span>
 </div>
 
@@ -64,11 +64,11 @@ return (
 </td>
 
 <td className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center font-bold text-sm max-sm:text-xs">
-{index === 1 ? "सौ. अंबिका लक्ष्मण पखाले" : index === 8 ? "नोटा" : ""}
+{index === 3 ? "गणेश शांताराम नवथरे" : index === 8 ? "नोटा" : ""}
 </td>
 
 <td className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center">
-{index === 1 ? (
+{index === 3 ? (
 <img
 src="/user.png"
 className="w-12 h-12 mx-auto object-cover max-sm:w-12 max-sm:h-12"
@@ -79,7 +79,7 @@ className="w-12 h-12 mx-auto object-cover max-sm:w-12 max-sm:h-12"
 </td>
 
 <td className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center">
-{index === 1 ? (
+{index === 3 ? (
 <img
 src="/symbol-bartan.png"
 className="w-10 h-10 mx-auto object-contain max-sm:w-8 max-sm:h-8"
@@ -104,12 +104,12 @@ activeRow === index
 <td className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center">
 <button
 onClick={() =>
-index === 1
+index === 3
 ? playButtonSound(index) // फक्त उमेदवारासाठी sound1
 : playOtherButtonSound(index) // NOTA + बाकी सर्व rows → sound2
 }
 className={`h-7 rounded-full max-sm:h-6 ${
-index === 1
+index === 3
 ? "bg-green-500 w-14 max-sm:w-12"
 : "bg-blue-700 w-14 max-sm:w-12"
 }`}
@@ -122,13 +122,13 @@ index === 1
 </div>
 
 <h1 className="text-center text-xl font-bold mb-4 mt-6">
-<span className="text-red-600">घड्याळ</span> या निशाणी समोरील बटन दाबून <span className="text-red-600">सौ. अंबिका लक्ष्मण पखाले </span> यांना प्रचंड बहुमतांनी
+<span className="text-red-600">घड्याळ</span> या निशाणी समोरील बटन दाबून <span className="text-red-600">गणेश शांताराम नवथरे </span> यांना प्रचंड बहुमतांनी
 विजय करा.
 </h1>
 
 <div className="text-center mb-4 pt-2">
 <span className="bg-yellow-200 text-green-800 font-bold px-4 py-2 inline-block rounded">
-मतदान - गुरुवार, दि. १५ जानेवारी २०२६ रोजी सकाळी ७ ते सायं ६ वाजे पर्यंत.
+मतदान - गुरुवार, दि. १५ जानेवारी २०२६ सकाळी ७:३० ते सायंकाळी ५.३० वाजेपर्यंत.
 </span>
 </div>
 
