@@ -42,7 +42,7 @@ const SoundCheck = () => {
         </span>
       </div>
 
-      {/* 👇 Mobile spacing added (p-2), desktop tight (md:p-0) */}
+      {/* Mobile gets breathing space — desktop stays tight */}
       <div className="overflow-x-hidden p-2 md:p-0">
         <table className="w-full border-2 border-gray-400 dark:border-gray-600 table-fixed">
           <thead>
@@ -50,7 +50,7 @@ const SoundCheck = () => {
               {["अनु. क्र.","नाव","फोटो","निशाणी","बत्ती","बटन"].map((h, i) => (
                 <th
                   key={i}
-                  className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold"
+                  className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center text-xs font-bold"
                 >
                   {h}
                 </th>
@@ -61,15 +61,15 @@ const SoundCheck = () => {
           <tbody>
             {[...Array(10)].map((_, index) => (
               <tr key={index} className="bg-blue-300 dark:bg-gray-800">
-                <td className="border-2 border-gray-400 px-1 py-1 text-center font-bold text-sm">
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center font-bold text-sm">
                   {index + 1}
                 </td>
 
-                <td className="border-2 border-gray-400 px-1 py-1 text-center font-bold text-sm">
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center font-bold text-sm">
                   {index === 3 ? "गणेश शांताराम नवथरे" : ""}
                 </td>
 
-                <td className="border-2 border-gray-400 px-1 py-1 text-center">
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center">
                   {index === 3 ? (
                     <img src="/user.png" className="w-12 h-12 mx-auto object-cover" />
                   ) : (
@@ -77,7 +77,7 @@ const SoundCheck = () => {
                   )}
                 </td>
 
-                <td className="border-2 border-gray-400 px-1 py-1 text-center">
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center">
                   {index === 3 ? (
                     <img
                       src="/symbol-bartan.png"
@@ -89,7 +89,7 @@ const SoundCheck = () => {
                 </td>
 
                 {/* बत्ती */}
-                <td className="border-2 border-gray-400 px-1 py-1 text-center bg-white dark:bg-gray-800">
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center bg-white dark:bg-gray-800">
                   <div
                     className={`w-5 h-5 rounded-full mx-auto ${
                       activeRow === index ? "bg-red-600" : "bg-gray-300 dark:bg-gray-500"
@@ -97,14 +97,14 @@ const SoundCheck = () => {
                   ></div>
                 </td>
 
-                {/* 👇 Button cell padding reduced so button touches border more */}
-                <td className="border-2 border-gray-400 px-0 py-0 text-center bg-white dark:bg-gray-800">
+                {/* बटन — curved + closer to border */}
+                <td className="border-2 border-gray-400 px-2 md:px-1 py-1 text-center bg-white dark:bg-gray-800">
                   <button
                     onClick={() =>
                       index === 3 ? playButtonSound(index) : playOtherButtonSound(index)
                     }
-                    className={`h-7 w-full rounded-none ${
-                      index === 3 ? "bg-green-500" : "bg-blue-700"
+                    className={`h-7 rounded-full ${
+                      index === 3 ? "bg-green-500 w-14" : "bg-blue-700 w-14"
                     }`}
                   />
                 </td>
