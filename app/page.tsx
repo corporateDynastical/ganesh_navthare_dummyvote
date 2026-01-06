@@ -38,7 +38,7 @@ const SoundCheck = () => {
 
       <div className="text-center mb-4 pt-2">
         <span className="bg-yellow-200 text-green-800 font-bold px-4 py-2 inline-block rounded dark:bg-yellow-300">
-          राष्ट्रवादी काँग्रेस पार्टीचे प्रभाग क्र. २४-ड चे अधिकृत उमेदवार
+          राष्ट्रवादी काँग्रेस पार्टीचे प्रभाग क्र. २४ (ड) चे अधिकृत उमेदवार
         </span>
       </div>
 
