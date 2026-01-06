@@ -32,7 +32,7 @@ const SoundCheck = () => {
 
       <div className="text-center mb-4 pt-2">
         <span className="bg-blue-700 font-bold text-white px-4 py-2 inline-block rounded-full">
-          डेमो मतदानासाठी घड्याळ निशाणी समोरील बटन दबावेm
+          डेमो मतदानासाठी घड्याळ निशाणी समोरील बटन दबावे
         </span>
       </div>
 
