@@ -47,7 +47,7 @@ const SoundCheck = () => {
           <thead>
             <tr className="bg-gray-100 dark:bg-gray-800">
               <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                क्रमांक
+               अनु. क्र.
               </th>
               <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
                 नाव
