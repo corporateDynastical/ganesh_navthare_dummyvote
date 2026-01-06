@@ -48,9 +48,9 @@ return (
 <thead>
 <tr className="bg-gray-100 dark:bg-gray-800">
 <th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 bg-blue-100 text-center text-xs font-bold max-sm:px-0.5">क्रमांक</th>
-<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 bg-blue-100text-center text-xs font-bold max-sm:px-0.5">नाव</th>
-<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center text-xs font-bold max-sm:px-0.5">फोटो</th>
-<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center text-xs font-bold max-sm:px-0.5">निशाणी</th>
+<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 bg-blue-100 text-center text-xs font-bold max-sm:px-0.5">नाव</th>
+<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 bg-blue-100 text-center text-xs font-bold max-sm:px-0.5">फोटो</th>
+<th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 bg-blue-100 text-center text-xs font-bold max-sm:px-0.5">निशाणी</th>
 <th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center text-xs font-bold max-sm:px-0.5">बत्ती</th>
 <th className="border-2 border-gray-400 dark:border-gray-600 px-1 py-1 text-center text-xs font-bold max-sm:px-0.5">बटन</th>
 </tr>
