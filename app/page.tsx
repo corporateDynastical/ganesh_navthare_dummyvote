@@ -62,7 +62,7 @@ const SoundCheck = () => {
             {[...Array(10)].map((_, index) => (
               <tr key={index} className="bg-[#9fdaeb] dark:bg-gray-800">
                 <td className="border-2 border-gray-400 px-2 md:px-1 py-2 text-center font-bold text-sm">
-                  {index + 1}
+                  {["१","२","३","४","५","६","७","८","९","१०"][index]}
                 </td>
 
                 <td className="border-2 border-gray-400 px-2 md:px-1 py-2 text-center font-bold text-sm">
@@ -97,7 +97,7 @@ const SoundCheck = () => {
                   ></div>
                 </td>
 
-                {/* बटन — curved, neat, smaller */}
+                {/* बटन */}
                 <td className="border-2 border-gray-400 px-2 md:px-1 py-2 text-center bg-white dark:bg-gray-800">
                   <button
                     onClick={() =>
