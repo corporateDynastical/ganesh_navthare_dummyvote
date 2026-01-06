@@ -2,8 +2,8 @@
 import { useRef, useState } from "react";
 
 const SoundCheck = () => {
-  const buttonSoundRef = useRef<HTMLAudioElement | null>(null); // sound1
-  const otherButtonSoundRef = useRef<HTMLAudioElement | null>(null); // sound2
+  const buttonSoundRef = useRef<HTMLAudioElement | null>(null);
+  const otherButtonSoundRef = useRef<HTMLAudioElement | null>(null);
   const [activeRow, setActiveRow] = useState<number | null>(null);
 
   const playButtonSound = (index: number) => {
@@ -42,28 +42,19 @@ const SoundCheck = () => {
         </span>
       </div>
 
-      <div className="overflow-x-hidden">
+      {/* 👇 Mobile spacing added (p-2), desktop tight (md:p-0) */}
+      <div className="overflow-x-hidden p-2 md:p-0">
         <table className="w-full border-2 border-gray-400 dark:border-gray-600 table-fixed">
           <thead>
             <tr className="bg-gray-100 dark:bg-gray-800">
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-               अनु. क्र.
-              </th>
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                नाव
-              </th>
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                फोटो
-              </th>
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                निशाणी
-              </th>
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                बत्ती
-              </th>
-              <th className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold">
-                बटन
-              </th>
+              {["अनु. क्र.","नाव","फोटो","निशाणी","बत्ती","बटन"].map((h, i) => (
+                <th
+                  key={i}
+                  className="border-2 border-gray-400 px-1 py-1 text-center text-xs font-bold"
+                >
+                  {h}
+                </th>
+              ))}
             </tr>
           </thead>
 
@@ -74,7 +65,6 @@ const SoundCheck = () => {
                   {index + 1}
                 </td>
 
-                {/* ❌ NOTA removed — only candidate on row 4 */}
                 <td className="border-2 border-gray-400 px-1 py-1 text-center font-bold text-sm">
                   {index === 3 ? "गणेश शांताराम नवथरे" : ""}
                 </td>
@@ -107,14 +97,14 @@ const SoundCheck = () => {
                   ></div>
                 </td>
 
-                {/* बटन */}
-                <td className="border-2 border-gray-400 px-1 py-1 text-center bg-white dark:bg-gray-800">
+                {/* 👇 Button cell padding reduced so button touches border more */}
+                <td className="border-2 border-gray-400 px-0 py-0 text-center bg-white dark:bg-gray-800">
                   <button
                     onClick={() =>
                       index === 3 ? playButtonSound(index) : playOtherButtonSound(index)
                     }
-                    className={`h-7 rounded-full ${
-                      index === 3 ? "bg-green-500 w-14" : "bg-blue-700 w-14"
+                    className={`h-7 w-full rounded-none ${
+                      index === 3 ? "bg-green-500" : "bg-blue-700"
                     }`}
                   />
                 </td>
