@@ -68,17 +68,15 @@ const SoundCheck = () => {
           </thead>
 
           <tbody>
-            {[...Array(9)].map((_, index) => (
-              <tr
-                key={index}
-                className="bg-blue-300 dark:bg-gray-800"
-              >
+            {[...Array(10)].map((_, index) => (
+              <tr key={index} className="bg-blue-300 dark:bg-gray-800">
                 <td className="border-2 border-gray-400 px-1 py-1 text-center font-bold text-sm">
                   {index + 1}
                 </td>
 
+                {/* ❌ NOTA removed — only candidate on row 4 */}
                 <td className="border-2 border-gray-400 px-1 py-1 text-center font-bold text-sm">
-                  {index === 3 ? "गणेश शांताराम नवथरे" : index === 8 ? "नोटा" : ""}
+                  {index === 3 ? "गणेश शांताराम नवथरे" : ""}
                 </td>
 
                 <td className="border-2 border-gray-400 px-1 py-1 text-center">
@@ -100,7 +98,7 @@ const SoundCheck = () => {
                   )}
                 </td>
 
-                {/* 🔴 बत्ती column — NOT blue */}
+                {/* बत्ती */}
                 <td className="border-2 border-gray-400 px-1 py-1 text-center bg-white dark:bg-gray-800">
                   <div
                     className={`w-5 h-5 rounded-full mx-auto ${
@@ -109,7 +107,7 @@ const SoundCheck = () => {
                   ></div>
                 </td>
 
-                {/* 🔵 बटन column — NOT blue */}
+                {/* बटन */}
                 <td className="border-2 border-gray-400 px-1 py-1 text-center bg-white dark:bg-gray-800">
                   <button
                     onClick={() =>
