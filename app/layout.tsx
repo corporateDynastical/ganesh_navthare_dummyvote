@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Demo Voteing System",
-  description: "Created By ARP Digital Solutions",
+  title: "Dummy Voting System",
+  description: "Dummy Vote For Ganesh Navthare",
 };
 
 export default function RootLayout({
